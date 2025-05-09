@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    background-image: url('snake-game.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    background-color: #060505;
+     color: #fff;
+}
+#scoreBox{
+    position: absolute;
+    top:38px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.board{
+    margin-bottom: 40px;
+    background: linear-gradient(rgb(101, 234, 101),rgb(115, 115, 57));
+    width: 90vmin;
+    height: 85vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(rgb(1, 248, 1),rgb(199, 34, 12));;
+    border: 2px solid rgb(42, 2, 42);
+    border-radius: 9px;
+    transform: scale(1.02);
+}
+.snake{
+    background-color: purple;
+    border: .20vmin solid #fff;
+    border-radius: 12px;
+    
+}
+.food{
+    background: linear-gradient(red ,rgb(218, 8, 218));
+    border: .25vmin solid #000;
+    border-radius: 8px;
+   
+}
